@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-websocket-extensions"
+VERSION=0.1.2
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby WebSocket extension manager"
+DESCRIPTION="Generic extension manager for WebSocket connections"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_websocket_extensions_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_websocket_extensions_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
